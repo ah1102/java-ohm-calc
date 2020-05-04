@@ -20,7 +20,7 @@ public class Main {
         float u, r, a;
 
         switch (vyb) {
-            case 1:
+            case 1: //расчет напряжения
                 System.out.println("Введите сопротивление:");
                 Scanner num2 = new Scanner(System.in);
                 r = num2.nextInt();
@@ -30,7 +30,7 @@ public class Main {
                 u = r * a;
                 System.out.println("Напряжение = " + u);
                 break;
-            case 2:
+            case 2: //расчет сопротивления
                 System.out.println("Введите напряжение:");
                 Scanner num4 = new Scanner(System.in);
                 u = num4.nextInt();
@@ -39,6 +39,16 @@ public class Main {
                 a = num5.nextInt();
                 r = u / a;
                 System.out.println("Сопротивление = " + r);
+                break;
+            case 3: //расчет тока
+                System.out.println("Введите напряжение:");
+                Scanner num6 = new Scanner(System.in);
+                u = num6.nextInt();
+                System.out.println("Введите сопротивление:");
+                Scanner num7 = new Scanner(System.in);
+                r = num7.nextInt();
+                a = u / r;
+                System.out.println("Сопротивление = " + a);
                 break;
             default:
                 System.out.println("Неправильный ввод!");
