@@ -18,11 +18,10 @@ public class Main {
 
         //Принимаем выбор от пользователя
         Scanner num = new Scanner(System.in);
-        int vyb = num.nextInt(); //объявляем переменную и записываем в нее ввод пользователя
 
         float u, r, a;
 
-        switch (vyb) {
+        switch (num.nextInt()) {
             case 1: //расчет напряжения
                 System.out.println("Введите сопротивление:");
                 r = num.nextInt();
