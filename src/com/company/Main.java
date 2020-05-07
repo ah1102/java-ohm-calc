@@ -27,27 +27,31 @@ public class Main {
                 r = num.nextInt();
                 System.out.println("Введите ток:");
                 a = num.nextInt();
-                u = r * a;
-                System.out.println("Напряжение = " + u);
+                System.out.println("Напряжение = " + (r * a));
                 break;
             case 2: //расчет сопротивления
                 System.out.println("Введите напряжение:");
                 u = num.nextInt();
                 System.out.println("Введите ток:");
                 a = num.nextInt();
-                r = u / a;
-                System.out.println("Сопротивление = " + r);
+                System.out.println("Сопротивление = " + (u / a));
                 break;
             case 3: //расчет тока
                 System.out.println("Введите напряжение:");
                 u = num.nextInt();
                 System.out.println("Введите сопротивление:");
                 r = num.nextInt();
-                a = u / r;
-                System.out.println("Сопротивление = " + a);
+                System.out.println("Сопротивление = " + (u / r));
                 break;
             default:
                 System.out.println("Неправильный ввод!");
+        }
+        System.out.println("Повторить?: y/n");
+
+        char yas = 'y';
+        char ext = num.next().charAt(0);
+        if (ext == yas) {
+            System.out.println("Сработало");
         }
 
 
